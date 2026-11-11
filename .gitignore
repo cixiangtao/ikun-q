@@ -9,8 +9,8 @@ dist/
 work/
 apps/web/public/catalog/
 apps/web/src/generated/
-data/
-backups/
+/data/
+/backups/
 output/playwright/
 .playwright-cli/
 apps/worker/src/generated/
