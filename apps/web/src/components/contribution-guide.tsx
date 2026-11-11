@@ -2,6 +2,7 @@ import { ArrowLeftIcon, ArrowUpRightIcon, DownloadIcon } from 'lucide-react';
 import { Button } from '@ikun-q/ui/components/button';
 import contributionTemplate from '../../../../templates/共创投稿.md?raw';
 import creativeBrief from '../../../../templates/共创简报.md?raw';
+import originalReference from '../../../../references/ikun-original.webp';
 
 const templateUrl = `data:text/markdown;charset=utf-8,${encodeURIComponent(contributionTemplate)}`;
 const briefUrl = `data:text/markdown;charset=utf-8,${encodeURIComponent(creativeBrief)}`;
@@ -21,7 +22,7 @@ export function ContributionGuide() {
           不需要先学会写代码。
         </p>
         <p className="contribution-status">
-          代码已开源，欢迎一起改进网站、交流选题与创作方法。角色创作包与作品正式收录仍在准备中，可以先整理想法和投稿资料。
+          代码与最小创作包已开放，欢迎一起改进网站、交流选题与创作方法。首期先收文字方案，图片作品的正式收录仍在准备中。
         </p>
         <div className="contribution-links">
           <Button asChild variant="outline" size="lg">
@@ -63,6 +64,7 @@ export function ContributionGuide() {
         <aside className="contribution-outline" aria-label="指南内容">
           <span>这份指南里</span>
           <p>首期文字共创</p>
+          <p>完整原始参考</p>
           <p>可以做什么</p>
           <p>开始前准备什么</p>
           <p>作品怎样被看见</p>
@@ -104,7 +106,36 @@ export function ContributionGuide() {
             <p>
               在 GitHub 登录并提交后会获得 Issue 编号，方案和反馈公开可查；无需会 Git。
               维护者通过评论及“待查看、需补充、可采用、本次不采用”标签人工反馈，文字方案可采用不等于图片已收录。
-              原型图片使用范围明确后，再开放图像制作。
+              可以按参考图使用说明准备创作，图片投稿与正式收录流程将另行公布。
+            </p>
+          </section>
+          <section aria-labelledby="contribution-reference">
+            <h2 id="contribution-reference">完整原图，作为共同起点</h2>
+            <p>
+              提供原始 1000 × 986 WebP，不拆零件。已确认供公开下载、社区 AI
+              生成／改编及生成结果在社区展示；图片使用范围与代码 MIT 分开，原作者署名待补充。
+            </p>
+            <div className="contribution-links mt-5">
+              <Button asChild size="lg" className="min-h-11">
+                <a href={originalReference} download="ikun-q-original.webp">
+                  <DownloadIcon data-icon="inline-start" />
+                  下载原始参考图
+                </a>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="min-h-11">
+                <a
+                  href="https://github.com/cixiangtao/ikun-q/blob/main/REFERENCE_USE.md"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  参考图使用说明
+                  <ArrowUpRightIcon data-icon="inline-end" />
+                </a>
+              </Button>
+            </div>
+            <p>
+              B 新图只输入完整原图；Q 仅在明确请求时从选定 B 派生。当前首期仍先收文字，
+              下载或生成图片不会自动进入图鉴。
             </p>
           </section>
           <section aria-labelledby="contribution-directions">
@@ -162,7 +193,7 @@ export function ContributionGuide() {
               </li>
             </ol>
             <p>
-              创作包开放前，无需先付费生图。现有图片可浏览，不代表已经授权再创作或再分发；
+              无需先付费生图。原始参考图按使用说明提供，其他现有作品仍需分别确认使用范围；
               准备资料时也不需要附上账号凭据、私人聊天或私人联系方式。
             </p>
           </section>
