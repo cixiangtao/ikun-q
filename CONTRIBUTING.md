@@ -2,7 +2,7 @@
 
 欢迎从一个具体想法开始：人物与造型选题、作品结构问题、文字与资料考据、创作方法、网站与工具改进。
 
-代码已按[MIT](LICENSE)开放协作，角色创作包与作品正式收录仍在准备中。选题和方法可到[讨论区](https://github.com/cixiangtao/ikun-q/discussions)交流，具体建议或问题可用[Issue模板](https://github.com/cixiangtao/ikun-q/issues/new/choose)。请先准备[投稿清单](templates/共创投稿.md)；下载、填写或登录都不等于作品投稿，不要求先付费生图。
+代码已按[MIT](LICENSE)开放协作，最小创作包已提供完整原型与使用说明，图片作品正式收录仍在准备中。选题和方法可到[讨论区](https://github.com/cixiangtao/ikun-q/discussions)交流，具体建议或问题可用[Issue模板](https://github.com/cixiangtao/ikun-q/issues/new/choose)。请先准备[投稿清单](templates/共创投稿.md)；下载、填写或登录都不等于作品投稿，不要求先付费生图。
 
 ## 准备资料
 
@@ -24,6 +24,6 @@
 
 确认有权提交的自主代码及说明，按本仓库MIT许可通过[Pull request](https://github.com/cixiangtao/ikun-q/compare)贡献；保留第三方来源与许可声明。这不是权利转让，图片与角色素材不因代码PR默认获得许可。提交前请阅读本次变更并对其负责，AI辅助改动也需要说明与验证。
 
-示例 manifest 可用于练习目录同步，示例图并非正式创作素材。真实原型、主图与派生规则在授权创作包开放后提供，不把示例图用作角色输入。
+示例 manifest 可用于练习目录同步，示例图并非正式创作素材。完整原型及B／Q输入规则见[参考图使用说明](REFERENCE_USE.md)，不把示例图用作角色输入；已有联动主图不随本包提供。
 
 请围绕具体作品和证据交流，尊重作者、保留来源，不冒用署名。网站主图选择与社区作品展示将分别处理；赞数不能代替质量与来源检查。

@@ -1,0 +1,20 @@
+{
+  "kind": "community_identity_reference",
+  "source": "用户提供的网络IKUN二创素材",
+  "original_creator": null,
+  "source_url": null,
+  "attribution": "原作者署名及原始发布链接待补充，维护者不是原图作者。",
+  "authorization_confirmed_on": "2026-11-11",
+  "authorization_confirmed_by": "IKUN同学",
+  "permitted_uses": [
+    "public_reference_download",
+    "community_ai_generation_and_adaptation",
+    "generated_work_community_display"
+  ],
+  "commercial_use": "not_confirmed_in_current_scope",
+  "width": 1000,
+  "height": 986,
+  "format": "webp",
+  "sha256": "65b1896579061665848ec122659d63e06b6350237976d21a430e4ed371f48f39",
+  "usage_notice": "../REFERENCE_USE.md"
+}

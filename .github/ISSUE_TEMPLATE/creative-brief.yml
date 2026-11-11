@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        本期先收文字方案，原型图片与图片制作使用范围仍待明确。
+        本期先收文字方案，完整原型已按[参考图使用说明](https://github.com/cixiangtao/ikun-q/blob/main/REFERENCE_USE.md)提供，图片正式收录仍在准备。
         先读[任务说明](https://github.com/cixiangtao/ikun-q/blob/main/CHALLENGE_001.md)与[身份特征入门](https://github.com/cixiangtao/ikun-q/blob/main/CHARACTER_GUIDE.md)。
         点击提交后，填写内容会公开在本Issue中。无需私人联系方式、账号凭据或图片。
   - type: input
@@ -47,5 +47,5 @@ body:
     attributes:
       label: 提交前确认
       options:
-        - label: 我理解这是一份公开的文字方案；本次提交不代表图片已获授权、已生成或已收录。
+        - label: 我理解这是一份公开的文字方案；本次提交不代表图片已生成、验收或收录，原型按参考图使用说明提供。
           required: true
