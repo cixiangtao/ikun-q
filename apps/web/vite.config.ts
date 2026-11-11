@@ -2,8 +2,14 @@ import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
+import { readCreationRules } from '../../scripts/creation-rules.ts';
 
-export default defineConfig({
+export default defineConfig(async () => ({
+  define: {
+    __IKUN_CREATION_RULES__: JSON.stringify(
+      await readCreationRules(fileURLToPath(new URL('../../', import.meta.url))),
+    ),
+  },
   plugins: [react(), tailwindcss()],
   resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) } },
   server: {
@@ -11,4 +17,4 @@ export default defineConfig({
     strictPort: true,
     proxy: { '/api': 'http://127.0.0.1:3001' },
   },
-});
+}));
