@@ -88,6 +88,18 @@ export function ContributionGuide() {
           </section>
           <section aria-labelledby="contribution-preparation">
             <h2 id="contribution-preparation">先准备一份清楚的说明</h2>
+            <p>
+              初次参与可以先读身份特征说明，分清中分、眼睛与红脸颊等识别点，以及配色、表情和服装的变化范围。
+            </p>
+            <a
+              className="about-contribution-link"
+              href="https://github.com/cixiangtao/ikun-q/blob/main/CHARACTER_GUIDE.md"
+              target="_blank"
+              rel="noreferrer"
+            >
+              阅读身份特征说明
+              <ArrowUpRightIcon aria-hidden="true" />
+            </a>
             <ol className="contribution-steps">
               <li>
                 <strong>选一个具体想法。</strong>
