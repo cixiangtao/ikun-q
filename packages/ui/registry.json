@@ -189,6 +189,18 @@
         }
       ],
       "docs": "在 Tailwind v4 的入口 CSS 中，紧接 @import 'tailwindcss' 之后加入 @import './styles/ikun-q.css'。此路径相对于 src 下的入口 CSS；其他目录请调整相对路径。主题单独安装，会应用现有 IKUN-Q 全局主题。"
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "沿用radix-nova的多行文本框与语义主题。",
+      "files": [
+        {
+          "path": "src/components/textarea.tsx",
+          "type": "registry:ui"
+        }
+      ]
     }
   ]
 }
