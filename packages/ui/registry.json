@@ -1,0 +1,194 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "ikun-q",
+  "homepage": "https://ikun-q.cixiangtao.workers.dev",
+  "items": [
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "IKUN-Q badge，沿用 radix-nova 组合与语义主题。",
+      "files": [
+        {
+          "path": "src/components/badge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "IKUN-Q button，沿用 radix-nova 组合与语义主题。",
+      "files": [
+        {
+          "path": "src/components/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "reaction-buttons",
+      "type": "registry:ui",
+      "title": "ReactionButtons",
+      "description": "受控的赞、踩与收藏按钮组，支持简约和描边样式。",
+      "files": [
+        {
+          "path": "src/components/reaction-buttons.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "IKUN-Q dialog，沿用 radix-nova 组合与语义主题。",
+      "files": [
+        {
+          "path": "src/components/dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "empty",
+      "type": "registry:ui",
+      "title": "Empty",
+      "description": "IKUN-Q empty，沿用 radix-nova 组合与语义主题。",
+      "files": [
+        {
+          "path": "src/components/empty.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "field",
+      "type": "registry:ui",
+      "title": "Field",
+      "description": "IKUN-Q field，沿用 radix-nova 组合与语义主题。",
+      "files": [
+        {
+          "path": "src/components/field.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "IKUN-Q input，沿用 radix-nova 组合与语义主题。",
+      "files": [
+        {
+          "path": "src/components/input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "description": "IKUN-Q label，沿用 radix-nova 组合与语义主题。",
+      "files": [
+        {
+          "path": "src/components/label.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "native-select",
+      "type": "registry:ui",
+      "title": "Native Select",
+      "description": "IKUN-Q native-select，沿用 radix-nova 组合与语义主题。",
+      "files": [
+        {
+          "path": "src/components/native-select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "统一黑白黄样式的Radix下拉选择，支持键盘、触屏、选中标记与边界避让。",
+      "files": [
+        {
+          "path": "src/components/select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Separator",
+      "description": "IKUN-Q separator，沿用 radix-nova 组合与语义主题。",
+      "files": [
+        {
+          "path": "src/components/separator.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "IKUN-Q tabs，沿用 radix-nova 组合与语义主题。",
+      "files": [
+        {
+          "path": "src/components/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "toggle-group",
+      "type": "registry:ui",
+      "title": "Toggle Group",
+      "description": "IKUN-Q toggle-group，沿用 radix-nova 组合与语义主题。",
+      "files": [
+        {
+          "path": "src/components/toggle-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "toggle",
+      "type": "registry:ui",
+      "title": "Toggle",
+      "description": "IKUN-Q toggle，沿用 radix-nova 组合与语义主题。",
+      "files": [
+        {
+          "path": "src/components/toggle.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "theme",
+      "type": "registry:style",
+      "title": "IKUN-Q Theme",
+      "description": "网站现有黑白黄主题、字体与 shadcn 基础样式。",
+      "dependencies": [
+        "@fontsource-variable/geist@^5.3.0",
+        "shadcn@^4.23.0",
+        "tw-animate-css@^1.4.0"
+      ],
+      "files": [
+        {
+          "path": "src/styles/theme.css",
+          "type": "registry:file",
+          "target": "~/src/styles/ikun-q.css"
+        }
+      ],
+      "docs": "在 Tailwind v4 的入口 CSS 中，紧接 @import 'tailwindcss' 之后加入 @import './styles/ikun-q.css'。此路径相对于 src 下的入口 CSS；其他目录请调整相对路径。主题单独安装，会应用现有 IKUN-Q 全局主题。"
+    }
+  ]
+}

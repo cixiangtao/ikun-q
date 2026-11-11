@@ -1,0 +1,79 @@
+{
+  "project": "IKUN-Q community preview",
+  "phase": "sample_validation",
+  "spec": {
+    "width": 300,
+    "height": 400
+  },
+  "assets": [
+    {
+      "id": "example-1",
+      "path": "assets/drafts/example-1.png",
+      "theme": "运行示例",
+      "character": "示例 1",
+      "pose": "几何占位",
+      "width": 300,
+      "height": 400,
+      "status": "draft",
+      "user_final_approved": false,
+      "sha256": "ec92fef6eebaf12dfb664581e0c33c60847110566796f79878478bf7dd1e1f5f",
+      "display": {
+        "listed": true,
+        "character_slug": "example-1",
+        "title": "程序生成的色块示例",
+        "series": "运行示例",
+        "description": "仅用于验证浏览、搜索、保存与目录同步，不是角色原型或联动作品。",
+        "tags": ["运行示例"],
+        "aliases": [],
+        "order": 1,
+        "edition": "几何占位"
+      }
+    },
+    {
+      "id": "example-2",
+      "path": "assets/drafts/example-2.png",
+      "theme": "运行示例",
+      "character": "示例 2",
+      "pose": "几何占位",
+      "width": 300,
+      "height": 400,
+      "status": "draft",
+      "user_final_approved": false,
+      "sha256": "d2823e40a4b2688d54f6d3f3ea6d07a3fe3f97f9b4a823d1d6477d70e33e0ee3",
+      "display": {
+        "listed": true,
+        "character_slug": "example-2",
+        "title": "程序生成的色块示例",
+        "series": "运行示例",
+        "description": "仅用于验证浏览、搜索、保存与目录同步，不是角色原型或联动作品。",
+        "tags": ["运行示例"],
+        "aliases": [],
+        "order": 2,
+        "edition": "几何占位"
+      }
+    },
+    {
+      "id": "example-3",
+      "path": "assets/drafts/example-3.png",
+      "theme": "运行示例",
+      "character": "示例 3",
+      "pose": "几何占位",
+      "width": 300,
+      "height": 400,
+      "status": "draft",
+      "user_final_approved": false,
+      "sha256": "b9c0f5e55814dabe1beb6656d0a8b05fc9d38b7aaa51bfa8ffc2bf309d2c3721",
+      "display": {
+        "listed": true,
+        "character_slug": "example-3",
+        "title": "程序生成的色块示例",
+        "series": "运行示例",
+        "description": "仅用于验证浏览、搜索、保存与目录同步，不是角色原型或联动作品。",
+        "tags": ["运行示例"],
+        "aliases": [],
+        "order": 3,
+        "edition": "几何占位"
+      }
+    }
+  ]
+}

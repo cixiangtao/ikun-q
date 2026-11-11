@@ -1,0 +1,5 @@
+# Copy to .dev.vars for local development. Never commit real secrets.
+AUTH_BASE_URL=http://127.0.0.1:8787
+BETTER_AUTH_SECRET=replace-with-a-random-secret-of-at-least-32-characters
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=

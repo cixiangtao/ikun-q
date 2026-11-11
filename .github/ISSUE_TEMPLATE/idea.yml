@@ -1,0 +1,18 @@
+name: 选题与改进建议
+description: 提出人物方向、考据线索或具体改进
+body:
+  - type: markdown
+    attributes:
+      value: 这是建议入口，角色作品正式收录仍在准备中。提出选题不代表授权使用第三方素材，也不代表已经认领或安排制作。
+  - type: textarea
+    id: idea
+    attributes:
+      label: 你的想法
+      description: 一次围绕一个人物、问题或改进点，说明希望达到的效果。
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 对应作品或资料来源
+      description: 可填写人物版本、现有图片链接、文字依据或方法片段。不必提供私人联系方式。

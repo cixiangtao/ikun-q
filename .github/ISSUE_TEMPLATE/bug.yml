@@ -1,0 +1,20 @@
+name: 使用问题
+description: 报告图鉴、安装、运行或工具的问题
+body:
+  - type: markdown
+    attributes:
+      value: 请围绕一个问题说明，不附密码、令牌、私人聊天或个人敏感信息。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 遇到了什么问题
+      description: 写清复现步骤、预期结果和实际结果。
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 使用环境
+      description: 浏览器、系统或Node版本；可附删去敏感信息的错误片段。
+    validations:
+      required: true

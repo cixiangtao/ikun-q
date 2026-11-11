@@ -1,0 +1,47 @@
+{
+  "name": "ikun-q",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cixiangtao/ikun-q.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev:cloudflare": "pnpm build && pnpm --filter @ikun-q/worker db:local && pnpm --filter @ikun-q/worker dev",
+    "build:cloudflare": "pnpm build && pnpm --filter @ikun-q/worker build",
+    "deploy:cloudflare": "node scripts/deploy-cloudflare.ts",
+    "dev:api": "pnpm --filter @ikun-q/api dev",
+    "start:api": "pnpm --filter @ikun-q/api start",
+    "dev": "pnpm catalog:sync && pnpm --filter @ikun-q/web dev",
+    "build": "pnpm catalog:sync && pnpm --filter @ikun-q/web build",
+    "preview": "pnpm --filter @ikun-q/web preview",
+    "catalog:sync": "node scripts/sync-catalog.ts",
+    "typecheck": "pnpm catalog:sync && tsc --noEmit -p tsconfig.tools.json && pnpm --filter @ikun-q/api typecheck && pnpm --filter @ikun-q/worker typecheck && pnpm --filter @ikun-q/ui typecheck && pnpm --filter @ikun-q/web typecheck",
+    "lint": "oxlint --deny-warnings .",
+    "lint:fix": "oxlint --fix .",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
+    "test": "vitest run",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm ui:registry:build && pnpm build && pnpm --filter @ikun-q/worker build",
+    "ui:registry:build": "pnpm --filter @ikun-q/ui registry:build",
+    "ui:add": "pnpm --filter @ikun-q/ui exec shadcn add --cwd ../../apps/web",
+    "ui:info": "pnpm --filter @ikun-q/ui exec shadcn info --cwd ../../apps/web"
+  },
+  "devDependencies": {
+    "@ikun-q/catalog": "workspace:*",
+    "@types/node": "^24.0.0",
+    "jsonc-parser": "3.3.1",
+    "oxfmt": "0.75.0",
+    "oxlint": "1.90.0",
+    "sharp": "^0.35.5",
+    "typescript": "7.0.2",
+    "vitest": "5.0.5"
+  },
+  "engines": {
+    "node": ">=24.18.0 <25",
+    "pnpm": ">=12.16.1 <13"
+  },
+  "packageManager": "pnpm@12.16.1"
+}
