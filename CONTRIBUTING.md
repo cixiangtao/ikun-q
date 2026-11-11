@@ -6,6 +6,8 @@
 
 ## 准备资料
 
+首期先收[小鸟图书管理员文字方案](CHALLENGE_001.md)，填写[创作简报](templates/共创简报.md)后通过[专用表单](https://github.com/cixiangtao/ikun-q/issues/new?template=creative-brief.yml)提交。编号、状态标签与后续补充都在同一Issue查看，反馈含义见[创作包说明](STARTER_KIT.md#怎样查看反馈)。这不是图片投稿入口，不要求先附图。
+
 创作方向先看[身份特征入门](CHARACTER_GUIDE.md)：理解完整头部的特征关系，再说明本次人物的服装、配色与神态。说明页不是新增图像输入，现阶段没有可供使用的嘴／眼／发型零件包。
 
 - 用一句话说明想法、问题或本次改进。

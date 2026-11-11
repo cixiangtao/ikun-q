@@ -26,6 +26,8 @@ GitHub 登录需自行配置 `apps/worker/.dev.vars`，示例见同目录 `.dev.
 
 先读[身份特征入门](CHARACTER_GUIDE.md)，了解核心识别点、可变化部分与原图中无需默认继承的元素。这是文字说明，实际原型与图片创作包仍待开放，不需要先自行生图或寻找替代原型。
 
+第一期开放[小鸟图书管理员文字方案](CHALLENGE_001.md)。[最小创作包说明](STARTER_KIT.md)列出材料、表单与反馈流程；可以先下载[共创简报](templates/共创简报.md)，再到[首期表单](https://github.com/cixiangtao/ikun-q/issues/new?template=creative-brief.yml)亲自提交，获得可查询的Issue编号。原型、图片制作与角色作品正式收录仍待开放。
+
 阅读[贡献说明](CONTRIBUTING.md)，准备[投稿清单](templates/共创投稿.md)。[讨论区](https://github.com/cixiangtao/ikun-q/discussions)用于交流选题与方法，[Issues](https://github.com/cixiangtao/ikun-q/issues/new/choose)用于具体建议与问题，[Pull requests](https://github.com/cixiangtao/ikun-q/pulls)用于代码协作。创作规范与可用素材会随创作包逐步接入；角色作品正式收录入口仍在准备中。
 
 图鉴前端在 `apps/web/`，公共组件在 `packages/ui/`，数据约束在 `packages/catalog/`，目录同步在 `scripts/catalog-sync.ts`。`apps/worker/` 提供账号互动方案，`apps/api/` 保留匿名点赞的 Node 自托管实现，两者能力不同。

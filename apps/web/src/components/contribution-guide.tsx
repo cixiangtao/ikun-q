@@ -1,8 +1,10 @@
 import { ArrowLeftIcon, ArrowUpRightIcon, DownloadIcon } from 'lucide-react';
 import { Button } from '@ikun-q/ui/components/button';
 import contributionTemplate from '../../../../templates/共创投稿.md?raw';
+import creativeBrief from '../../../../templates/共创简报.md?raw';
 
 const templateUrl = `data:text/markdown;charset=utf-8,${encodeURIComponent(contributionTemplate)}`;
+const briefUrl = `data:text/markdown;charset=utf-8,${encodeURIComponent(creativeBrief)}`;
 
 /** Explains the preparation stage; downloading the checklist never submits a contribution. */
 export function ContributionGuide() {
@@ -60,11 +62,51 @@ export function ContributionGuide() {
       <div className="contribution-layout">
         <aside className="contribution-outline" aria-label="指南内容">
           <span>这份指南里</span>
+          <p>首期文字共创</p>
           <p>可以做什么</p>
           <p>开始前准备什么</p>
           <p>作品怎样被看见</p>
         </aside>
         <div className="contribution-content">
+          <section aria-labelledby="contribution-first-task">
+            <h2 id="contribution-first-task">首期共创：小鸟图书管理员</h2>
+            <p>
+              先用文字设计一位图书管理员：穿什么、用什么配色、怎样抱书，以及用什么神态表达性格。
+              保留熟悉的小鸟身份，把手、书本与衣服的关系说清楚即可，当前无需附图或先付费生图。
+            </p>
+            <div className="contribution-links mt-5">
+              <Button asChild size="lg" className="min-h-11">
+                <a
+                  href="https://github.com/cixiangtao/ikun-q/issues/new?template=creative-brief.yml"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  填写首期文字方案
+                  <ArrowUpRightIcon data-icon="inline-end" />
+                </a>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="min-h-11">
+                <a href={briefUrl} download="ikun-q-creative-brief.md">
+                  <DownloadIcon data-icon="inline-start" />
+                  下载创作简报
+                </a>
+              </Button>
+            </div>
+            <a
+              className="about-contribution-link"
+              href="https://github.com/cixiangtao/ikun-q/blob/main/STARTER_KIT.md"
+              target="_blank"
+              rel="noreferrer"
+            >
+              阅读任务与提交说明
+              <ArrowUpRightIcon aria-hidden="true" />
+            </a>
+            <p>
+              在 GitHub 登录并提交后会获得 Issue 编号，方案和反馈公开可查；无需会 Git。
+              维护者通过评论及“待查看、需补充、可采用、本次不采用”标签人工反馈，文字方案可采用不等于图片已收录。
+              原型图片使用范围明确后，再开放图像制作。
+            </p>
+          </section>
           <section aria-labelledby="contribution-directions">
             <h2 id="contribution-directions">从你擅长的事开始</h2>
             <dl className="contribution-directions">

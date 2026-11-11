@@ -1,0 +1,51 @@
+name: 首期共创文字方案
+description: 为小鸟图书管理员提交一份文字造型方案，无需附图
+title: '[共创01] 图书管理员 · '
+labels: ['共创文字方案', '待查看']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        本期先收文字方案，原型图片与图片制作使用范围仍待明确。
+        先读[任务说明](https://github.com/cixiangtao/ikun-q/blob/main/CHALLENGE_001.md)与[身份特征入门](https://github.com/cixiangtao/ikun-q/blob/main/CHARACTER_GUIDE.md)。
+        点击提交后，填写内容会公开在本Issue中。无需私人联系方式、账号凭据或图片。
+  - type: input
+    id: author
+    attributes:
+      label: 希望公开的署名
+      description: 昵称即可；有协作者时一并注明。
+    validations:
+      required: true
+  - type: input
+    id: concept
+    attributes:
+      label: 方案名称
+    validations:
+      required: true
+  - type: textarea
+    id: design
+    attributes:
+      label: 造型方案
+      description: 写清服装和主色、脸部与头发配色、神态、手势，以及书本怎样持握或固定。
+      placeholder: 可以从共创简报复制相应内容，并说明怎样保留小鸟身份。
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 来源与待确认事项
+      description: 引用了哪些资料，有哪些已知使用限制？没有引用可写“无”。
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: 希望获得的反馈
+      description: 哪些设计你还不确定，最希望一起讨论什么？
+  - type: checkboxes
+    id: publication
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我理解这是一份公开的文字方案；本次提交不代表图片已获授权、已生成或已收录。
+          required: true
