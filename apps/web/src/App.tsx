@@ -7,6 +7,7 @@ import { Button } from '@ikun-q/ui/components/button';
 import { AccountMenu } from '@/components/account-menu';
 import { ProfilePage } from '@/components/profile-page';
 import { ContributionGuide } from '@/components/contribution-guide';
+import { CreationStudio } from '@/components/creation-studio';
 import { canonicalGalleryHash, resolveArtwork } from '@/lib/catalog';
 import rawCatalog from '@/generated/catalog.json';
 import originalImage from '../../../references/community-placeholder.webp';
@@ -27,6 +28,7 @@ export default function App() {
   const isAbout = path === '#/about';
   const isProfile = path === '#/me';
   const isContribute = path === '#/contribute';
+  const isCreate = path === '#/create';
   const imageId = path?.startsWith('#/artworks/') ? path.slice('#/artworks/'.length) : undefined;
   const artworkId =
     imageId ?? new URLSearchParams(routeHash.split('?')[1] ?? '').get('artwork') ?? undefined;
@@ -36,6 +38,7 @@ export default function App() {
     !isAbout &&
     !isProfile &&
     !isContribute &&
+    !isCreate &&
     (path === '#/' || path === '#' || path === '#collection');
   const [filters, setFilters] = useState<GalleryFilters>({
     query: '',
@@ -59,7 +62,7 @@ export default function App() {
     return () => window.removeEventListener('scroll', rememberScroll);
   }, [isGallery]);
   useEffect(() => {
-    document.title = `${current?.character ?? (isAbout ? '关于' : isProfile ? '我的主页' : isContribute ? '共创指南' : 'Q 版角色图鉴')} · IKUN-Q`;
+    document.title = `${current?.character ?? (isAbout ? '关于' : isProfile ? '我的主页' : isContribute ? '共创指南' : isCreate ? '创作台' : 'Q 版角色图鉴')} · IKUN-Q`;
     if (previousRoute.current === hash) return;
     const oldRoute = previousRoute.current;
     previousRoute.current = hash;
@@ -70,7 +73,7 @@ export default function App() {
       main.current?.focus({ preventScroll: true });
     });
     return () => cancelAnimationFrame(frame);
-  }, [hash, path, isGallery, current?.character, isAbout, isProfile, isContribute]);
+  }, [hash, path, isGallery, current?.character, isAbout, isProfile, isContribute, isCreate]);
   function goFiltered(value: Partial<GalleryFilters>) {
     setFilters((state) => ({ ...state, query: '', series: '', tag: '', ...value }));
     galleryScroll.current = 0;
@@ -95,6 +98,9 @@ export default function App() {
         <nav className="main-nav" aria-label="主导航">
           <a href="#/" aria-current={isGallery || isDetail ? 'page' : undefined}>
             角色图鉴
+          </a>
+          <a href="#/create" aria-current={isCreate ? 'page' : undefined}>
+            创作台
           </a>
           <a href="#/contribute" aria-current={isContribute ? 'page' : undefined}>
             共创指南
@@ -126,6 +132,9 @@ export default function App() {
         ) : null}
         {isProfile ? <ProfilePage artworks={catalog.artworks} /> : null}
         {isContribute ? <ContributionGuide /> : null}
+        <div hidden={!isCreate}>
+          <CreationStudio />
+        </div>
         {isAbout ? (
           <section className="about-page">
             <a className="back-link" href="#/">
@@ -173,7 +182,7 @@ export default function App() {
             </div>
           </section>
         ) : null}
-        {!isGallery && !isDetail && !isAbout && !isProfile && !isContribute ? (
+        {!isGallery && !isDetail && !isAbout && !isProfile && !isContribute && !isCreate ? (
           <section className="not-found">
             <h1>这条路还没有角色经过</h1>
             <Button asChild>

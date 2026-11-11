@@ -22,6 +22,10 @@ corepack pnpm dev:cloudflare
 
 GitHub 登录需自行配置 `apps/worker/.dev.vars`，示例见同目录 `.dev.vars.example`。未配置时浏览与下载仍可用，账号互动关闭。运行 `corepack pnpm check` 执行格式、lint、类型、测试及构建，不修改远程数据。
 
+## 创作台
+
+运行网站后打开`#/create`，填写人物、服装、配色、神态和装备，整理可编辑提示词，下载完整原图并保存创作方案。无需登录或AI密钥，填写内容只在本次页面内保留，不会上传。站内导航保留编辑，刷新前请保存；复制失败时可手动复制。B基础规则见[CREATION_RULES.md](CREATION_RULES.md)，图片范围见[参考图使用说明](REFERENCE_USE.md)。
+
 ## 从哪里参与
 
 先读[身份特征入门](CHARACTER_GUIDE.md)，了解核心识别点、可变化部分与原图中无需默认继承的元素。再从[最小创作包](STARTER_KIT.md)下载完整原始参考，按[参考图使用说明](REFERENCE_USE.md)准备创作，无需另找替代原型。

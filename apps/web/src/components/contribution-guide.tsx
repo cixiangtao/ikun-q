@@ -25,6 +25,12 @@ export function ContributionGuide() {
           代码与最小创作包已开放，欢迎一起改进网站、交流选题与创作方法。首期先收文字方案，图片作品的正式收录仍在准备中。
         </p>
         <div className="contribution-links">
+          <Button asChild size="lg">
+            <a href="#/create">
+              打开创作台
+              <ArrowUpRightIcon data-icon="inline-end" />
+            </a>
+          </Button>
           <Button asChild variant="outline" size="lg">
             <a href="https://github.com/cixiangtao/ikun-q" target="_blank" rel="noreferrer">
               开源仓库
